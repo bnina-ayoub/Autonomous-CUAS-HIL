@@ -4,3 +4,9 @@
 [submodule "src/micro_ros_setup"]
 	path = src/micro_ros_setup
 	url = https://github.com/micro-ROS/micro_ros_setup
+[submodule "firmware/CUAS-Actuation-STM32"]
+	path = firmware/CUAS-Actuation-STM32
+	url = https://github.com/bnina-ayoub/CUAS-Actuation-STM32.git
+[submodule "firmware/CUAS-Gateway-Zephyr"]
+	path = firmware/CUAS-Gateway-Zephyr
+	url = https://github.com/bnina-ayoub/CUAS-Gateway-Zephyr.git
