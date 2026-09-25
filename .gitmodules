@@ -1,0 +1,6 @@
+[submodule "AeroTrack"]
+	path = AeroTrack
+	url = https://github.com/bnina-ayoub/AeroTrack
+[submodule "src/micro_ros_setup"]
+	path = src/micro_ros_setup
+	url = https://github.com/micro-ROS/micro_ros_setup

@@ -1,0 +1,29 @@
+# ROS 2 Build & Workspace Artifacts
+build/
+install/
+log/
+
+# Python Cache & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.vscode/
+.venv/
+venv/
+*.egg-info/
+dummy_60fps.py
+visualization.py
+swarm_diamond_bullseye_foramtion.py
+# Deep Learning Weights & Compiled Engines
+*.trt
+*.engine
+*.pth
+*.pt
+# Explicitly allowing .onnx files to be tracked (do not add *.onnx)
+
+# OS Packages & Binaries
+*.deb
+
+# Runtime Telemetry & Data Logs
+*.csv
+*.log
