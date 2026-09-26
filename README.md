@@ -1,5 +1,8 @@
+
+
 # Autonomous C-UAS Hardware-in-the-Loop (HIL) Simulation
 
+<img width="2540" height="1440" alt="frame_000039" src="https://github.com/user-attachments/assets/ed0c6273-1881-48b2-9d87-7b29abdd126c" />
 A ROS 2 and NVIDIA Isaac Sim digital twin engineered for closed-loop visual servoing and real-time Counter-Unmanned Aerial Systems (C-UAS) swarm tracking.
 
 This repository bridges deterministic kinematic actuation with the **AeroTrack** deep learning perception model. By deploying a photorealistic, physically accurate simulation environment, the system validates sub-10ms tracking permanence and non-linear target acquisition prior to physical hardware deployment.
