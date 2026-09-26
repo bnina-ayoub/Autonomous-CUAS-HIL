@@ -36,8 +36,6 @@ The project files are mapped directly in the root directory to facilitate immedi
 | `isaac_track.py` | The primary visual servoing bridge. Captures synthetic camera feeds from Isaac Sim, executes AeroTrack inference, calculates the collective swarm centroid, and publishes spatial coordinates to the ROS 2 network at 60 Hz. |
 | `isaac_motor_sim.py` | The actuation node. Subscribes to the perception centroid, processes the spatial error through the decoupled PID control laws, and applies continuous joint velocity/position commands to the URDF Pan-Tilt model. |
 | `swarm_diamond_bullseye_formation.py` | Parametric swarm generator. Spawns microscopic kamikaze UAVs executing dynamic, multi-agent orbital and diamond formations to stress-test the NWD association loop. |
-| `visualization.py` | Tactical HUD rendering module. Injects real-time telemetry, neon-green targeting brackets, crosshairs, and tracking IDs onto the visual output stream. |
-| `dummy_60fps.py` | Hardware clock synchronization utility ensuring deterministic 16.6 ms loop execution for performance benchmarking. |
 
 ---
 
@@ -64,7 +62,7 @@ To achieve zero-copy shared memory execution and dynamic early-exit routing, the
 - `early_stage_fp16.trt` — Executes the ECA-backbone and P3 extraction.
 - `deep_stage_fp16.trt` — Executes the deeper PAFPN layers when triggered.
 
-> **Note:** Pre-compiled `.trt` files are provided in this repository for testing. However, TensorRT engines are strictly bound to the GPU architecture they were compiled on. If you encounter a hardware mismatch error during execution, you must rebuild the engines locally from the ONNX graphs using the provided export tools:
+TensorRT engines are strictly bound to the GPU architecture they were compiled on. If you encounter a hardware mismatch error during execution, you must rebuild the engines locally from the ONNX graphs using the provided export tools:
 
 ```bash
 # Example rebuild command for local GPU architectures
